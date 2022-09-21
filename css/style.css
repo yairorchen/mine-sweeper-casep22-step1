@@ -1,0 +1,50 @@
+.board td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.board td:hover {
+    
+    background-color: lightsalmon;
+    color: lightsalmon;
+}
+
+
+
+.number {
+    background-color: rgb(34, 180, 85);
+}
+.shown {
+    background-color: rgb(207, 196, 196);
+
+}
+.hide {
+   
+    background-color: rgb(157, 64, 64);
+    color:rgb(157, 64, 64)
+    
+
+}
+
+.mine {
+    background-color: rgb(237, 13, 13);
+}
+
+button {
+    background-color: lightblue;
+    padding: 5px;
+    border: 2px solid lightgray;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.cover{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transition: 0.5s;
+    background-color: beige;
+}
