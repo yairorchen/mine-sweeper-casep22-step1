@@ -1,35 +1,47 @@
+h2{
+    display: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+    display: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:xx-large; 
+}
+/* span{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:xx-large;
+} */
+body{
+    background:linear-gradient(to left , #07b4c4,#8f6ada)
+    
+
+}
+
+
 .board td {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     text-align: center;
-    transition: 0.5s;
+    transition: 0.7s;
+    border-color: #262226;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: X-large;
 }
 
 .board td:hover {
     
-    background-color: lightsalmon;
-    color: lightsalmon;
+    background-color: rgb(26, 226, 226);
+    color: rgb(26, 226, 226);
 }
 
-
-
-.number {
-    background-color: rgb(34, 180, 85);
-}
 .shown {
-    background-color: rgb(207, 196, 196);
+    background-color: rgb(226, 226, 226);
 
 }
 .hide {
    
-    background-color: rgb(157, 64, 64);
-    color:rgb(157, 64, 64)
-    
-
-}
-
-.mine {
-    background-color: rgb(237, 13, 13);
+    background-color: #085391;
+    color:#085391;
 }
 
 button {
@@ -40,11 +52,24 @@ button {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: bold;
+    margin: 10px;
 }
-.cover{
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    transition: 0.5s;
-    background-color: beige;
+
+.container{
+    display: none;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(80, 149, 169);
+    margin-top: 50px;
+    border-radius: 15px;
+}
+.timer{
+    height: 85px;
+    width: 120px;
+    background-color: rgb(15, 200, 241);
+    margin-top: 50px;
+    border-radius: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:xx-large;
+    color: azure;
 }
