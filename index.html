@@ -10,20 +10,35 @@
 </head>
 
 <!-- onload="onLoad()" -->
-<body >
+<body onload="initGame()">
     <center>
     <h1>Mine Sweeper</h1>
-    <!-- <button onclick="toggleGame(this)">Play</button> -->
+    <div><h2 class="game" onclick="initGame()">😋</h2></div>
 
     <table border="1" cellpadding="10">
         <tbody class="board"></tbody>
     </table>
-    <div class="container"><h2><button onclick="initGame()">😎</button></h2><p><button onclick="initGame()">🤯</button></p>
+    <div class="container">
         <button onclick="levelChoice(1)">level 1</button><button onclick="levelChoice(2)">level 2</button><button onclick="levelChoice(3)">level 3</button></div>
     <div class="timer">0:000</div>
+    <div> <h3 class="life">💙</h3><h3 class="hint" onclick="toggleHint()">💡💡💡</h3></div>
+    <h3><button onclick="safeClick()">safe click<h5><p>3</p>clicks available</h5></button></h3>
+    <!-- <button onclick="manuallyMine()">manually positioned mines</button> -->
+    <h3 id="welcome">what is your nick name?</h3>
+    <input id="nickname" type="text">
+    <button onclick="storage()">submit</button>
+    <h2>records :</h2>
+    <div><h3 id="lev1" class="record"></h3><h3 id="lev2" class="record"></h3><h3 id="lev3" class="record"></h3></div>
+    
     </center>
     <script src="js/util.js"></script>
     <script src="js/main.js"></script>
 </body>
+<footer>
+    <p>Yair Orchen</p>
+    <p><a href="https://yairorchen.github.io/mine-sweeper-casep22-step1/">Github link</a></p>
+</footer>
 
 </html>
+
+
