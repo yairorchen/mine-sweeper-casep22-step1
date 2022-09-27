@@ -226,7 +226,10 @@ function cellMarked(event, elCell, i, j) {
 }
 
 function checkGameOver() {
-  if (coverCells() - markedCells() <= 0 || life === 0) {
+  if (
+    (coverCells() - markedCells() <= 0 && markedCells() === gLevel.MINES) ||
+    life === 0
+  ) {
     clearInterval(gTimerInterval)
     gGame.isOn = false
     gClickCounter = 0
