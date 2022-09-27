@@ -108,6 +108,7 @@ function renderBoard() {
         classStr = " marked"
       }
       if (isLose === true && gBoard[i][j].isMine) {
+        gBoard[i][j].symbol = BOMB
         classStr = " shown"
       }
       var dataAttribStr = `data-i="${i}" data-j="${j}"`
